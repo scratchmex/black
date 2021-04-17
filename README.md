@@ -423,6 +423,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
+      # you can change the tag @stable with any of the available here: https://github.com/psf/black/tags
       - uses: psf/black@stable
         with:
           args: ". --check"
